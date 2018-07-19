@@ -5,4 +5,10 @@ jobs:
       - image: circleci/ruby:2.4.1-jessie
     steps:
       - checkout
-      - run: notacommand
+      - run: echo 'hello world...'
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-jessie
+    steps:
+      - checkout
+      - run: echo 'goodbye world...'
